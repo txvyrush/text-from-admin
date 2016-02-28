@@ -12,5 +12,8 @@ define( 'gapps_txt_admin',plugin_dir_path( __FILE__ ) );
 if( is_admin() ){
 	require_once ( gapps_txt_admin.'admin_custom_post.php' );
 }
+else{
+	require_once ( gapps_txt_admin.'front_end_display.php' );	
+}
 
 ?>
